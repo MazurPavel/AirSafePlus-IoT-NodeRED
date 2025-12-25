@@ -1,0 +1,3808 @@
+[
+    {
+        "id": "61b73b37b3a11760",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7fc6a3d6832b1ea",
+        "type": "tab",
+        "label": "AirSafe+ Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "350a44bf42acad54",
+        "type": "tls-config",
+        "name": "defaultTLS",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "0176bc958a1fa1f8",
+        "type": "mqtt-broker",
+        "name": "airsafe",
+        "broker": "c07ae67ebad643cd97b61874b5d092b9.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "350a44bf42acad54",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3fc8b633c8d58e6e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9495806c3a6e0abf",
+        "type": "ui_tab",
+        "name": "AirSafe+ Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7389853dd5bfddda",
+        "type": "ui_group",
+        "name": "Traffic Junction - Scenario Controls",
+        "tab": "9495806c3a6e0abf",
+        "order": 2,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de6ed19636e84d04",
+        "type": "ui_group",
+        "name": "Traffic Junction - Charts",
+        "tab": "9495806c3a6e0abf",
+        "order": 3,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1cb611b36967e4b3",
+        "type": "ui_group",
+        "name": "Traffic Junction - Summary Indicators",
+        "tab": "9495806c3a6e0abf",
+        "order": 4,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e560682427d8016",
+        "type": "ui_group",
+        "name": "Traffic Junction - Alerts Panel",
+        "tab": "9495806c3a6e0abf",
+        "order": 5,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b1a7ec427527cb5",
+        "type": "ui_group",
+        "name": "Traffic Junction - Cloud Status",
+        "tab": "9495806c3a6e0abf",
+        "order": 6,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24fc7db1d41b03fe",
+        "type": "ui_group",
+        "name": "Traffic Junction - Spike Prediction",
+        "tab": "9495806c3a6e0abf",
+        "order": 7,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6c71119ea69e053e",
+        "type": "ui_group",
+        "name": "Traffic Junction - Sick-Day Index",
+        "tab": "9495806c3a6e0abf",
+        "order": 8,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d4170ab9840a8d24",
+        "type": "ui_group",
+        "name": "Construction Zone - Scenario Controls",
+        "tab": "9495806c3a6e0abf",
+        "order": 10,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "76e694235c6be27e",
+        "type": "ui_group",
+        "name": "Construction Zone - Charts",
+        "tab": "9495806c3a6e0abf",
+        "order": 11,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dece88c70a9ef56b",
+        "type": "ui_group",
+        "name": "Construction Zone - Summary Indicators",
+        "tab": "9495806c3a6e0abf",
+        "order": 12,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "beee854713f5d6ad",
+        "type": "ui_group",
+        "name": "Construction - Alert Panel",
+        "tab": "9495806c3a6e0abf",
+        "order": 13,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dd86562d8b7908fa",
+        "type": "ui_group",
+        "name": "Construction - Cloud Status",
+        "tab": "9495806c3a6e0abf",
+        "order": 14,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "33d783847867c10f",
+        "type": "ui_group",
+        "name": "Construction - Spike Prediction",
+        "tab": "9495806c3a6e0abf",
+        "order": 15,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "84de306013ad21f4",
+        "type": "ui_group",
+        "name": "Construction - Sick-Day Index",
+        "tab": "9495806c3a6e0abf",
+        "order": 16,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4bf11351ab4fb8f7",
+        "type": "ui_group",
+        "name": "----------------------------------------------------------------  Construction Zone  ----------------------------------------------------------------",
+        "tab": "9495806c3a6e0abf",
+        "order": 9,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": "",
+        "info": "<h3 style=\"text-align:center; margin:10px 0; color:#555;\">\n  Construction Zone Sensor\n</h3>\n<hr/>"
+    },
+    {
+        "id": "c0c91c0cad6a40f0",
+        "type": "ui_group",
+        "name": "Title",
+        "tab": "9495806c3a6e0abf",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a311cdd019932dba",
+        "type": "ui_group",
+        "name": "------------------------------------------------------------------------  Park  -----------------------------------------------------------------------",
+        "tab": "9495806c3a6e0abf",
+        "order": 17,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cd0245f72a315e24",
+        "type": "ui_group",
+        "name": "Park - Scenario Controls",
+        "tab": "9495806c3a6e0abf",
+        "order": 18,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28fd8b4da67291c1",
+        "type": "ui_group",
+        "name": "Park - Charts",
+        "tab": "9495806c3a6e0abf",
+        "order": 19,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e9b8472def91673",
+        "type": "ui_group",
+        "name": "Park - Summary Indicators",
+        "tab": "9495806c3a6e0abf",
+        "order": 20,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9778df195c1b6ef7",
+        "type": "ui_group",
+        "name": "Park - Alerts Panel",
+        "tab": "9495806c3a6e0abf",
+        "order": 21,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c87fbcece7a2d5da",
+        "type": "ui_group",
+        "name": "Park - Cloud Status",
+        "tab": "9495806c3a6e0abf",
+        "order": 22,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "146d1ddaad9d72a4",
+        "type": "ui_group",
+        "name": "Park - Spike Prediction",
+        "tab": "9495806c3a6e0abf",
+        "order": 23,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0fa9e18d0235e834",
+        "type": "ui_group",
+        "name": "Park - Sick-Day Index",
+        "tab": "9495806c3a6e0abf",
+        "order": 24,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d1da729a01c36fa",
+        "type": "inject",
+        "z": "61b73b37b3a11760",
+        "name": "Traffic Junction Sensor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"normal\"",
+        "payloadType": "jsonata",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "ed3931b9e903f8b8"
+            ]
+        ]
+    },
+    {
+        "id": "ed3931b9e903f8b8",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Traffic Junction Generator",
+        "func": "let scenario = flow.get(\"traffic_scenario\") || \"normal\";\n\nlet pm = 20 + Math.random() * 10;   \nlet co2 = 500 + Math.random() * 100;   \n\nif (scenario === \"rush_hour\") {\n    pm += 40 + Math.random() * 40;      \n    co2 += 300 + Math.random() * 400;   \n}\n\nif (scenario === \"windy\") {\n    pm *= 0.5;                          \n    co2 -= 50;                       \n}\n\nif (scenario === \"construction_spike\") {\n    pm += 100 + Math.random() * 60;      \n    co2 += 50 + Math.random() * 100;    \n}\n\nmsg.payload = {\n    locationId: \"traffic\",\n    pm: Math.round(pm),\n    co2: Math.round(co2),\n    temp: Math.round(28 + Math.random() * 5),\n    scenario: scenario                  \n};\n\nmsg.payload.location = \"traffic\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "10f985155f0659ae"
+            ]
+        ]
+    },
+    {
+        "id": "835a8583440a5880",
+        "type": "mqtt out",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/traffic",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0176bc958a1fa1f8",
+        "x": 1730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "703462324e7a6034",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Traffic Risk Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet risk = \"Low\";\n\nif (pm > 150 || co2 > 1200) {\n    risk = \"High\";\n} else if (pm > 80 || co2 > 900) {\n    risk = \"Moderate\";\n} else {\n    risk = \"Low\";\n}\n\nlet sickIndex = \"Low Sensitivity\";\n\nif (risk === \"Moderate\") {\n    sickIndex = \"Medium Sensitivity\";\n}\n\nif (risk === \"High\") {\n    sickIndex = \"High Sensitivity\";\n}\n\nmsg.payload.risk = risk;\nmsg.payload.sickIndex = sickIndex;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2530,
+        "y": 560,
+        "wires": [
+            [
+                "9b0125c2feee8520"
+            ]
+        ]
+    },
+    {
+        "id": "10f985155f0659ae",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Traffic Scenario Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet last = flow.get(\"lastTraffic\") || { pm, co2, temp };\n\nlet risk = \"Low\";\n\nif (Math.abs(pm - last.pm) > 40 || Math.abs(co2 - last.co2) > 200) {\n    risk = \"High\";\n}\n\nflow.set(\"lastTraffic\", { pm, co2, temp });\n\nmsg.payload.risk = risk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 380,
+        "wires": [
+            [
+                "588b1c7d9dba3786"
+            ]
+        ]
+    },
+    {
+        "id": "e08bf85729a87ddb",
+        "type": "http request",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 3050,
+        "y": 560,
+        "wires": [
+            [
+                "c160c11d6c17703b"
+            ]
+        ]
+    },
+    {
+        "id": "9b0125c2feee8520",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build ThingSpeak URL",
+        "func": "let base = \"https://api.thingspeak.com/update?api_key=ZEU54ETVTXD6RPKV\";\n\nlet p = msg.payload || {};\n\nlet pm   = Number(p.pm)   || 0;\nlet co2  = Number(p.co2)  || 0;\nlet temp = Number(p.temp) || 0;\n\nlet sdi = Number(p.sdiScore);\nif (isNaN(sdi)) sdi = 0;\n\nlet riskIndex = 0;\nif (p.risk === \"Moderate\") riskIndex = 1;\nelse if (p.risk === \"High\") riskIndex = 2;\n\nlet scenarioIndex = 0;\nswitch (p.scenario) {\n    case \"rush_hour\":          scenarioIndex = 1; break;\n    case \"windy\":              scenarioIndex = 2; break;\n    case \"construction_spike\": scenarioIndex = 3; break;\n    case \"crowded\":           scenarioIndex = 4; break;\n    case \"fire_alert\":        scenarioIndex = 5; break;\n}\n\nlet spikeFlag = p.spikeWarning ? 1 : 0;\n\nlet textField = p.sdiCategory || p.recommendation || \"\";\n\nmsg.url =\n    `${base}` +\n    `&field1=${pm}` +\n    `&field2=${co2}` +\n    `&field3=${temp}` +\n    `&field4=${sdi}` +\n    `&field5=${riskIndex}` +\n    `&field6=${scenarioIndex}` +\n    `&field7=${spikeFlag}` +\n    `&field8=${encodeURIComponent(textField)}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2800,
+        "y": 560,
+        "wires": [
+            [
+                "e08bf85729a87ddb"
+            ]
+        ]
+    },
+    {
+        "id": "e16259043793b3b6",
+        "type": "link in",
+        "z": "61b73b37b3a11760",
+        "name": "link in 1_trf",
+        "links": [
+            "23d108bdcd909352",
+            "3bb4fea0f38a5b08",
+            "8ab49d3efeee3a0e",
+            "b10198301b5948f2"
+        ],
+        "x": 365,
+        "y": 260,
+        "wires": [
+            [
+                "1cc0fa0cd7ebea8a"
+            ]
+        ]
+    },
+    {
+        "id": "9c18729da9bc372d",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract PM2.5",
+        "func": "msg.payload = msg.payload.pm;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2520,
+        "y": 220,
+        "wires": [
+            [
+                "67663edae3ad02b7",
+                "d9f5d3f777449d9f"
+            ]
+        ]
+    },
+    {
+        "id": "12ad232e727d44b9",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract CO2",
+        "func": "let chartMsg = { payload: msg.payload.co2 };\n\nlet summaryMsg = { payload: msg.payload.co2 };\n\nreturn [chartMsg, summaryMsg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2510,
+        "y": 140,
+        "wires": [
+            [
+                "e584d44fa05127d4"
+            ],
+            [
+                "fa0882bb55bd3695"
+            ]
+        ]
+    },
+    {
+        "id": "1cc0fa0cd7ebea8a",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Traffic Scenario Setter",
+        "func": "if (typeof msg.payload === \"string\") {\n    flow.set(\"traffic_scenario\", msg.payload);\n    node.warn(\"Scenario changed to: \" + msg.payload);\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "ed3931b9e903f8b8"
+            ]
+        ]
+    },
+    {
+        "id": "d9f5d3f777449d9f",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_dashboard_trf",
+        "mode": "link",
+        "links": [
+            "7764a563def2149f"
+        ],
+        "x": 2705,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e584d44fa05127d4",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_dashboard_trf",
+        "mode": "link",
+        "links": [
+            "53f27359524165b9"
+        ],
+        "x": 2705,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "67663edae3ad02b7",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_summary_trf",
+        "mode": "link",
+        "links": [
+            "6c2efca2e9345cd7"
+        ],
+        "x": 2705,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fa0882bb55bd3695",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_summary_trf",
+        "mode": "link",
+        "links": [
+            "2e816ad3d772912a"
+        ],
+        "x": 2705,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "53361f14783d066e",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "riskengine_to_summary_trf",
+        "mode": "link",
+        "links": [
+            "5105d7f6ec6b53cf"
+        ],
+        "x": 2705,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ab8c1b93d2c3f4c0",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Risk",
+        "func": "msg.payload = msg.payload.risk;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2510,
+        "y": 80,
+        "wires": [
+            [
+                "53361f14783d066e"
+            ]
+        ]
+    },
+    {
+        "id": "f295840f4ecb78b8",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build Alerts",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet scenario = msg.payload.scenario;\n\nlet alert = \"No alerts\";\n\nlet pmHigh = 100;\nlet pmVeryHigh = 150;\n\nlet co2High = 800;\nlet co2VeryHigh = 1200;\n\nif (scenario === \"rush_hour\") {\n    alert = \"⚠ Rush Hour: Pollution Increased\";\n}\nif (scenario === \"construction_spike\") {\n    alert = \"🚧 Construction Spike: Very High Pollution\";\n}\nif (scenario === \"windy\") {\n    alert = \"💨 Windy: Pollution Reduced\";\n}\n\nif (pm > pmHigh) {\n    alert = \"⚠ PM2.5 High (\" + pm + \" µg/m³)\";\n}\nif (pm > pmVeryHigh) {\n    alert = \"🚨 PM2.5 DANGEROUS (\" + pm + \" µg/m³)\";\n}\n\nif (co2 > co2High) {\n    alert = \"⚠ CO₂ High (\" + co2 + \" ppm)\";\n}\nif (co2 > co2VeryHigh) {\n    alert = \"🚨 CO₂ CRITICAL (\" + co2 + \" ppm)\";\n}\n\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2510,
+        "y": 320,
+        "wires": [
+            [
+                "64b465095b1129d2"
+            ]
+        ]
+    },
+    {
+        "id": "64b465095b1129d2",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "alerts_out_trf",
+        "mode": "link",
+        "links": [
+            "07d78189661accb7"
+        ],
+        "x": 2705,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c160c11d6c17703b",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Format Cloud Status",
+        "func": "let now = new Date().toLocaleTimeString();\n\nif (msg.statusCode === 200) {\n    msg.payload = \"🟢 Cloud OK — \" + now;\n} else {\n    msg.payload = \"🔴 Cloud Error \" + msg.statusCode + \" — \" + now;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3280,
+        "y": 560,
+        "wires": [
+            [
+                "d3dcf36706d0ca36"
+            ]
+        ]
+    },
+    {
+        "id": "d3dcf36706d0ca36",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "cloudstatus_out_trf",
+        "mode": "link",
+        "links": [
+            "3cc7ba181c04d491"
+        ],
+        "x": 3445,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "588b1c7d9dba3786",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Spike Predictor",
+        "func": "let data = msg.payload;\n\nlet location = data.location || data.locationId || \"traffic\";\nlet pm = Number(data.pm);\n\nlet history = context.get(location) || [];\nhistory.push(pm);\nif (history.length > 3) history.shift();\ncontext.set(location, history);\n\nlet spikeWarning = false;\nif (history.length === 3) {\n    if (history[0] < history[1] && history[1] < history[2]) {\n        spikeWarning = true;\n    }\n}\ndata.history = history;\ndata.spikeWarning = spikeWarning;\n\nlet spikeText = spikeWarning\n    ? \"⚠️ Rising Spike Detected\"\n    : \"✔ Stable\";\n\nlet msg1 = { payload: data };\n\nlet msg2 = { payload: spikeText };\n\nreturn [msg1, msg2];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 380,
+        "wires": [
+            [
+                "3d5b11e759484afa"
+            ]
+        ]
+    },
+    {
+        "id": "fecb3a2087f1bf47",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "spikepredictor_out_trf",
+        "mode": "link",
+        "links": [
+            "5c71b0eaae0d5cad"
+        ],
+        "x": 2705,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a511d85df5838e1e",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Spike Text",
+        "func": "let data = msg.payload;\n\nif (!data) return null;\n\nlet text = data.spikeText || (data.spikeWarning ? \"⚠️ Rising Spike Detected\" : \"✔ Stable\");\n\nmsg.payload = text;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2530,
+        "y": 480,
+        "wires": [
+            [
+                "fecb3a2087f1bf47"
+            ]
+        ]
+    },
+    {
+        "id": "3968013f0e75d8f0",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Sick-Day Index Engine",
+        "func": "let data = msg.payload;\n\nlet pm = Number(data.pm);\nlet co2 = Number(data.co2);\nlet scenario = data.scenario || \"normal\";\nlet spike = data.spikeWarning || false;\n\nlet pmScore = 0;\nif (pm < 15) pmScore = 0;\nelse if (pm < 35) pmScore = 10;\nelse if (pm < 55) pmScore = 20;\nelse if (pm < 100) pmScore = 35;\nelse if (pm < 150) pmScore = 50;\nelse pmScore = 60;\n\nlet co2Score = 0;\nif (co2 < 800) co2Score = 0;\nelse if (co2 < 1000) co2Score = 5;\nelse if (co2 < 1500) co2Score = 10;\nelse if (co2 < 2000) co2Score = 15;\nelse co2Score = 20;\n\nlet spikePenalty = spike ? 10 : 0;\n\nlet scenPenalty = 0;\nif (scenario === \"windy\") scenPenalty = -5;\nif (scenario === \"rush_hour\") scenPenalty = 5;\nif (scenario === \"construction_spike\") scenPenalty = 10;\n\nlet SDI = pmScore + co2Score + spikePenalty + scenPenalty;\nSDI = Math.max(0, Math.min(100, SDI)); // 0–100 clamp\n\nlet category = \"\";\nif (SDI < 20) category = \"🌤 Good — Safe for everyone\";\nelse if (SDI < 40) category = \"🙂 Mild — Sensitive groups should monitor symptoms\";\nelse if (SDI < 60) category = \"😷 Caution — Avoid long outdoor exposure\";\nelse if (SDI < 80) category = \"🤒 Unhealthy — People with asthma should stay indoors\";\nelse category = \"🚫 Sick-Day Risk — High danger for respiratory conditions\";\n\ndata.sdiScore = SDI;\ndata.sdiCategory = category;\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 400,
+        "wires": [
+            [
+                "b1c9eb3ab7f72d07"
+            ]
+        ]
+    },
+    {
+        "id": "b1c9eb3ab7f72d07",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "sickday_out_trf",
+        "mode": "link",
+        "links": [
+            "a9364b3e66cb0921"
+        ],
+        "x": 2705,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0aae9e57cedf7aef",
+        "type": "mqtt in",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/traffic",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0176bc958a1fa1f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1890,
+        "y": 300,
+        "wires": [
+            [
+                "9c18729da9bc372d",
+                "f295840f4ecb78b8",
+                "12ad232e727d44b9",
+                "ab8c1b93d2c3f4c0",
+                "a511d85df5838e1e",
+                "3968013f0e75d8f0"
+            ]
+        ]
+    },
+    {
+        "id": "3d5b11e759484afa",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Clone payload for MQTT",
+        "func": "let msg1 = { payload: msg.payload }; \nlet msg2 = { payload: msg.payload }; \n\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 380,
+        "wires": [
+            [
+                "835a8583440a5880"
+            ],
+            [
+                "703462324e7a6034"
+            ]
+        ]
+    },
+    {
+        "id": "ce59c354974a1427",
+        "type": "inject",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Sensor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"normal\"",
+        "payloadType": "jsonata",
+        "x": 280,
+        "y": 1280,
+        "wires": [
+            [
+                "36b2b63faa89e151"
+            ]
+        ]
+    },
+    {
+        "id": "36b2b63faa89e151",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Generator",
+        "func": "let scenario = flow.get(\"construction_scenario\") || \"normal\";\n\nlet pm = 25 + Math.random() * 15;   \nlet co2 = 600 + Math.random() * 120; \nlet temp = 30 + Math.random() * 4;\n\nif (scenario === \"windy\") {\n    pm *= 0.6;\n    co2 -= 40;\n}\n\nif (scenario === \"rush_hour\") {\n    pm += 30 + Math.random() * 20;\n    co2 += 120 + Math.random() * 150;\n}\n\nif (scenario === \"construction_spike\") {\n    pm += 120 + Math.random() * 80;\n    co2 += 200 + Math.random() * 150;\n}\n\nmsg.payload = {\n    locationId: \"construction\",\n    location: \"construction\",\n    pm: Math.round(pm),\n    co2: Math.round(co2),\n    temp: Math.round(temp),\n    scenario: scenario\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1280,
+        "wires": [
+            [
+                "17204fa62f0c91aa"
+            ]
+        ]
+    },
+    {
+        "id": "9c1e8195c62c8320",
+        "type": "mqtt out",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/construction",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0176bc958a1fa1f8",
+        "x": 1920,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "319fd85ae2a90ceb",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Risk Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet risk = \"Low\";\n\nif (pm > 150 || co2 > 1200) {\n    risk = \"High\";\n} else if (pm > 80 || co2 > 900) {\n    risk = \"Moderate\";\n} else {\n    risk = \"Low\";\n}\n\nlet sickIndex = \"Low Sensitivity\";\n\nif (risk === \"Moderate\") {\n    sickIndex = \"Medium Sensitivity\";\n}\n\nif (risk === \"High\") {\n    sickIndex = \"High Sensitivity\";\n}\n\nmsg.payload.risk = risk;\nmsg.payload.sickIndex = sickIndex;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2550,
+        "y": 1460,
+        "wires": [
+            [
+                "09c739f34ce405b2"
+            ]
+        ]
+    },
+    {
+        "id": "17204fa62f0c91aa",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Scenario Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet last = flow.get(\"lastConstruction\") || { pm, co2, temp };\n\nlet risk = \"Low\";\n\nif (Math.abs(pm - last.pm) > 60 || Math.abs(co2 - last.co2) > 250) {\n    risk = \"High\";\n} else if (pm > 120 || co2 > 900) {\n    risk = \"Moderate\";\n}\n\nflow.set(\"lastConstruction\", { pm, co2, temp });\n\nmsg.payload.risk = risk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1280,
+        "wires": [
+            [
+                "ce6f3958c04e40fa"
+            ]
+        ]
+    },
+    {
+        "id": "5cea93ed5a4d113d",
+        "type": "http request",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 3050,
+        "y": 1460,
+        "wires": [
+            [
+                "8aa60802b9cd0357"
+            ]
+        ]
+    },
+    {
+        "id": "09c739f34ce405b2",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build ThingSpeak URL",
+        "func": "let base = \"https://api.thingspeak.com/update?api_key=1IZD54CO094KYB3F\";\n\nlet p = msg.payload || {};\n\nlet pm = Number(p.pm) || 0;\nlet co2 = Number(p.co2) || 0;\nlet temp = Number(p.temp) || 0;\n\nlet sdi = Number(p.sdiScore);\nif (isNaN(sdi)) sdi = 0;\n\nlet riskIndex = 0;\nif (p.risk === \"Moderate\") riskIndex = 1;\nelse if (p.risk === \"High\") riskIndex = 2;\n\nlet scenarioIndex = 0;\nswitch (p.scenario) {\n    case \"windy\": scenarioIndex = 1; break;\n    case \"rush_hour\": scenarioIndex = 2; break;\n    case \"construction_spike\": scenarioIndex = 3; break;\n}\n\nlet spikeFlag = p.spikeWarning ? 1 : 0;\n\nlet textField = p.sdiCategory || p.recommendation || \"\";\ntextField = encodeURIComponent(textField);\n\nmsg.url =\n    `${base}` +\n    `&field1=${pm}` +\n    `&field2=${co2}` +\n    `&field3=${temp}` +\n    `&field4=${sdi}` +\n    `&field5=${riskIndex}` +\n    `&field6=${scenarioIndex}` +\n    `&field7=${spikeFlag}` +\n    `&field8=${textField}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2840,
+        "y": 1460,
+        "wires": [
+            [
+                "5cea93ed5a4d113d"
+            ]
+        ]
+    },
+    {
+        "id": "57d001b0e20bc0b0",
+        "type": "link in",
+        "z": "61b73b37b3a11760",
+        "name": "link in 2_con",
+        "links": [
+            "400257b77edf94fe",
+            "5d8983ff553d52a6",
+            "8b719bba8a8e02d6",
+            "ad106e700e9654a0"
+        ],
+        "x": 365,
+        "y": 1160,
+        "wires": [
+            [
+                "1f1106dfb1ce9f56"
+            ]
+        ]
+    },
+    {
+        "id": "0e0f21751a9f273f",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract PM2.5 (Construction)",
+        "func": "msg.payload = msg.payload.pm;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2560,
+        "y": 1120,
+        "wires": [
+            [
+                "9c2880c640e0c4ee",
+                "a782d17e83be1139"
+            ]
+        ]
+    },
+    {
+        "id": "41f3af28bb416f9a",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract CO2 (Construction)",
+        "func": "let chartMsg = { payload: msg.payload.co2 };\n\nlet summaryMsg = { payload: msg.payload.co2 };\n\nreturn [chartMsg, summaryMsg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2560,
+        "y": 1040,
+        "wires": [
+            [
+                "8c1b07fd08a7cae4"
+            ],
+            [
+                "ae2c3bbb7ff85fb8"
+            ]
+        ]
+    },
+    {
+        "id": "1f1106dfb1ce9f56",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Scenario Setter",
+        "func": "if (typeof msg.payload === \"string\") {\n    flow.set(\"construction_scenario\", msg.payload);\n    node.warn(\"Construction scenario changed to: \" + msg.payload);\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1160,
+        "wires": [
+            [
+                "36b2b63faa89e151"
+            ]
+        ]
+    },
+    {
+        "id": "a782d17e83be1139",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_dashboard_con",
+        "mode": "link",
+        "links": [
+            "9a0be3958d8a5685"
+        ],
+        "x": 2775,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "8c1b07fd08a7cae4",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_dashboard_con",
+        "mode": "link",
+        "links": [
+            "8477c056d7e455e2"
+        ],
+        "x": 2775,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9c2880c640e0c4ee",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_summary_con",
+        "mode": "link",
+        "links": [
+            "1561c1353f436ab3"
+        ],
+        "x": 2775,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "ae2c3bbb7ff85fb8",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_summary_con",
+        "mode": "link",
+        "links": [
+            "c702e85a382773c4"
+        ],
+        "x": 2775,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "4ffb1fe1facba79e",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "riskengine_to_summary_con",
+        "mode": "link",
+        "links": [
+            "1e318199cfcd2fcb"
+        ],
+        "x": 2775,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "95bb6afe1e7b5344",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Risk (Construction)",
+        "func": "msg.payload = msg.payload.risk;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2560,
+        "y": 980,
+        "wires": [
+            [
+                "4ffb1fe1facba79e"
+            ]
+        ]
+    },
+    {
+        "id": "4c7bde9017597247",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build Alerts (Construction)",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet scenario = msg.payload.scenario;\n\nlet alert = \"No alerts\";\n\nlet pmHigh = 100;\nlet pmVeryHigh = 150;\n\nlet co2High = 800;\nlet co2VeryHigh = 1200;\n\nif (scenario === \"rush_hour\") {\n    alert = \"⚠ Rush Hour: Pollution Increased\";\n}\nif (scenario === \"construction_spike\") {\n    alert = \"🚧 Construction Spike: Very High Pollution\";\n}\nif (scenario === \"windy\") {\n    alert = \"💨 Windy: Pollution Reduced\";\n}\n\nif (pm > pmHigh) {\n    alert = \"⚠ PM2.5 High (\" + pm + \" µg/m³)\";\n}\nif (pm > pmVeryHigh) {\n    alert = \"🚨 PM2.5 DANGEROUS (\" + pm + \" µg/m³)\";\n}\n\nif (co2 > co2High) {\n    alert = \"⚠ CO₂ High (\" + co2 + \" ppm)\";\n}\nif (co2 > co2VeryHigh) {\n    alert = \"🚨 CO₂ CRITICAL (\" + co2 + \" ppm)\";\n}\n\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2550,
+        "y": 1220,
+        "wires": [
+            [
+                "258fd29680cf98aa"
+            ]
+        ]
+    },
+    {
+        "id": "258fd29680cf98aa",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "alerts_out_con",
+        "mode": "link",
+        "links": [
+            "4ffb6c8e427f7b4a"
+        ],
+        "x": 2775,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "8aa60802b9cd0357",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Format Cloud Status",
+        "func": "let now = new Date().toLocaleTimeString();\n\nif (msg.statusCode === 200) {\n    msg.payload = \"🟢 Cloud OK — \" + now;\n} else {\n    msg.payload = \"🔴 Cloud Error \" + msg.statusCode + \" — \" + now;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3280,
+        "y": 1460,
+        "wires": [
+            [
+                "104249c71bdefac8"
+            ]
+        ]
+    },
+    {
+        "id": "104249c71bdefac8",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "cloudstatus_out_con",
+        "mode": "link",
+        "links": [
+            "b64afbe8f119826b"
+        ],
+        "x": 3445,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "ce6f3958c04e40fa",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Spike Predictor",
+        "func": "let data = msg.payload;\n\nlet location = \"construction\";\n\nlet pm = Number(data.pm);\n\nlet history = context.get(\"construction_history\") || [];\n\nhistory.push(pm);\n\nif (history.length > 3) history.shift();\n\ncontext.set(\"construction_history\", history);\n\nlet spikeWarning = false;\n\nif (history.length === 3) {\n    if (history[0] < history[1] && history[1] < history[2]) {\n        if ((history[2] - history[0]) > 20) {\n            spikeWarning = true;\n        }\n    }\n}\n\ndata.history = history;\ndata.spikeWarning = spikeWarning;\n\nlet spikeText = spikeWarning\n    ? \"⚠️ Rising Spike Detected\"\n    : \"✔ Stable\";\n\nlet msg1 = { payload: data };\n\nlet msg2 = { payload: spikeText };\n\nreturn [msg1, msg2];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 1280,
+        "wires": [
+            [
+                "ddf1f558affed0c3"
+            ]
+        ]
+    },
+    {
+        "id": "11af937b50c6b19b",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "spikepredictor_out_con",
+        "mode": "link",
+        "links": [
+            "1f709f77a3750890"
+        ],
+        "x": 2775,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "298b63136a9e3b56",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Spike Text (Construction)",
+        "func": "let data = msg.payload;\n\nif (!data) return null;\n\nlet text = data.spikeText || (data.spikeWarning ? \"⚠️ Rising Spike Detected\" : \"✔ Stable\");\n\nmsg.payload = text;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2580,
+        "y": 1380,
+        "wires": [
+            [
+                "11af937b50c6b19b"
+            ]
+        ]
+    },
+    {
+        "id": "2d9ddf1fd2488465",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction SDI Engine",
+        "func": "let data = msg.payload;\n\nlet pm = Number(data.pm);\nlet co2 = Number(data.co2);\nlet scenario = data.scenario || \"normal\";\nlet spike = data.spikeWarning || false;\n\nlet pmScore = 0;\nif (pm < 15) pmScore = 0;\nelse if (pm < 35) pmScore = 10;\nelse if (pm < 55) pmScore = 20;\nelse if (pm < 100) pmScore = 35;\nelse if (pm < 150) pmScore = 50;\nelse pmScore = 60;\n\nlet co2Score = 0;\nif (co2 < 800) co2Score = 0;\nelse if (co2 < 1000) co2Score = 5;\nelse if (co2 < 1500) co2Score = 10;\nelse if (co2 < 2000) co2Score = 15;\nelse co2Score = 20;\n\nlet spikePenalty = spike ? 10 : 0;\n\nlet scenPenalty = 0;\nif (scenario === \"windy\") scenPenalty = -5;\nif (scenario === \"rush_hour\") scenPenalty = 5;\nif (scenario === \"construction_spike\") scenPenalty = 10;\n\nlet SDI = pmScore + co2Score + spikePenalty + scenPenalty;\nSDI = Math.max(0, Math.min(100, SDI)); // 0–100 clamp\n\nlet category = \"\";\nif (SDI < 20) category = \"🌤 Good — Safe for everyone\";\nelse if (SDI < 40) category = \"🙂 Mild — Sensitive groups should monitor symptoms\";\nelse if (SDI < 60) category = \"😷 Caution — Avoid long outdoor exposure\";\nelse if (SDI < 80) category = \"🤒 Unhealthy — People with asthma should stay indoors\";\nelse category = \"🚫 Sick-Day Risk — High danger for respiratory conditions\";\n\ndata.sdiScore = SDI;\ndata.sdiCategory = category;\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2550,
+        "y": 1300,
+        "wires": [
+            [
+                "0c572beca7e94d1f"
+            ]
+        ]
+    },
+    {
+        "id": "0c572beca7e94d1f",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "sickday_out_con",
+        "mode": "link",
+        "links": [
+            "7771504577eb6b66",
+            "e332637430646894"
+        ],
+        "x": 2775,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "d1c5d50711e52d38",
+        "type": "mqtt in",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/construction",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0176bc958a1fa1f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1970,
+        "y": 1200,
+        "wires": [
+            [
+                "319fd85ae2a90ceb",
+                "298b63136a9e3b56",
+                "2d9ddf1fd2488465",
+                "4c7bde9017597247",
+                "0e0f21751a9f273f",
+                "41f3af28bb416f9a",
+                "95bb6afe1e7b5344"
+            ]
+        ]
+    },
+    {
+        "id": "ddf1f558affed0c3",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Construction Clone for MQTT",
+        "func": "let msg1 = { payload: msg.payload };  \nlet msg2 = { payload: msg.payload }; \nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 1280,
+        "wires": [
+            [
+                "9c1e8195c62c8320"
+            ],
+            [
+                "319fd85ae2a90ceb"
+            ]
+        ]
+    },
+    {
+        "id": "2e2e2a323da6c304",
+        "type": "inject",
+        "z": "61b73b37b3a11760",
+        "name": "Park Sensor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"normal\"",
+        "payloadType": "jsonata",
+        "x": 230,
+        "y": 2180,
+        "wires": [
+            [
+                "6692b6a31096490b"
+            ]
+        ]
+    },
+    {
+        "id": "6692b6a31096490b",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Generator",
+        "func": "let scenario = flow.get(\"park_scenario\") || \"normal\";\n\nlet pm = 5 + Math.random() * 10;  \nlet co2 = 350 + Math.random() * 100;  \nlet temp = 25 + Math.random() * 4;   \n\nif (scenario === \"windy\") {\n    pm *= 0.5;\n    co2 -= 30;\n}\n\nif (scenario === \"rush_hour\") {\n    pm += 10 + Math.random() * 15;  \n    co2 += 50 + Math.random() * 80;\n}\n\nif (scenario === \"construction_spike\") {\n    pm += 50 + Math.random() * 30;\n    co2 += 40 + Math.random() * 50;\n}\n\nmsg.payload = {\n    locationId: \"park\",\n    location: \"park\",\n    pm: Math.round(pm),\n    co2: Math.round(co2),\n    temp: Math.round(temp),\n    scenario: scenario\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 2180,
+        "wires": [
+            [
+                "98cdf0bc7d423f67"
+            ]
+        ]
+    },
+    {
+        "id": "dff889a445f1be93",
+        "type": "mqtt out",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/park",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0176bc958a1fa1f8",
+        "x": 1710,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "5fc867dd484a4895",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Risk Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet risk = \"Low\";\n\nif (pm > 150 || co2 > 1200) {\n    risk = \"High\";\n} else if (pm > 80 || co2 > 900) {\n    risk = \"Moderate\";\n} else {\n    risk = \"Low\";\n}\n\nlet sickIndex = \"Low Sensitivity\";\n\nif (risk === \"Moderate\") {\n    sickIndex = \"Medium Sensitivity\";\n}\n\nif (risk === \"High\") {\n    sickIndex = \"High Sensitivity\";\n}\n\nmsg.payload.risk = risk;\nmsg.payload.sickIndex = sickIndex;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2270,
+        "y": 2360,
+        "wires": [
+            [
+                "85d92bb57216976e"
+            ]
+        ]
+    },
+    {
+        "id": "98cdf0bc7d423f67",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Scenario Engine",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet temp = msg.payload.temp;\n\nlet last = flow.get(\"lastPark\") || { pm, co2, temp };\n\nlet risk = \"Low\";\n\nif (Math.abs(pm - last.pm) > 20 || Math.abs(co2 - last.co2) > 100) {\n    risk = \"High\";\n}\nelse if (pm > 40 || co2 > 600) {\n    risk = \"Moderate\";\n}\n\nflow.set(\"lastPark\", { pm, co2, temp });\n\nmsg.payload.risk = risk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 2180,
+        "wires": [
+            [
+                "74b628d15ffb44ad"
+            ]
+        ]
+    },
+    {
+        "id": "600319526476e8d8",
+        "type": "http request",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2790,
+        "y": 2360,
+        "wires": [
+            [
+                "c512086eb91b8bb0"
+            ]
+        ]
+    },
+    {
+        "id": "85d92bb57216976e",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build ThingSpeak URL",
+        "func": "let base = \"https://api.thingspeak.com/update?api_key=O8D5GN3UTLX3KRUI\";\n\nlet p = msg.payload || {};\n\nlet pm   = Number(p.pm)   || 0;\nlet co2  = Number(p.co2)  || 0;\nlet temp = Number(p.temp) || 0;\n\nlet sdi = Number(p.sdiScore);\nif (isNaN(sdi)) sdi = 0;\n\nlet riskIndex = 0;\nif (p.risk === \"Moderate\") riskIndex = 1;\nelse if (p.risk === \"High\") riskIndex = 2;\n\nlet scenarioIndex = 0;\nswitch (p.scenario) {\n    case \"windy\":              scenarioIndex = 1; break;\n    case \"rush_hour\":          scenarioIndex = 2; break;\n    case \"construction_spike\": scenarioIndex = 3; break;\n    case \"crowded\":            scenarioIndex = 4; break;\n    case \"fire_alert\":         scenarioIndex = 5; break;\n}\n\nlet spikeFlag = p.spikeWarning ? 1 : 0;\n\nlet textField = p.sdiCategory || p.recommendation || \"\";\ntextField = encodeURIComponent(textField);\n\nmsg.url =\n    `${base}` +\n    `&field1=${pm}` +\n    `&field2=${co2}` +\n    `&field3=${temp}` +\n    `&field4=${sdi}` +\n    `&field5=${riskIndex}` +\n    `&field6=${scenarioIndex}` +\n    `&field7=${spikeFlag}` +\n    `&field8=${textField}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2540,
+        "y": 2360,
+        "wires": [
+            [
+                "600319526476e8d8"
+            ]
+        ]
+    },
+    {
+        "id": "136f9a29220dbca6",
+        "type": "link in",
+        "z": "61b73b37b3a11760",
+        "name": "link in 3_prk",
+        "links": [
+            "3dccec8c99cc100c",
+            "497937fe6eafb7c4",
+            "79ebb1486843af66",
+            "c241c8f06a7a505f"
+        ],
+        "x": 345,
+        "y": 2060,
+        "wires": [
+            [
+                "8beb8cad3b3e2ab5"
+            ]
+        ]
+    },
+    {
+        "id": "22a695535048c80b",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract PM2.5 (Park)",
+        "func": "msg.payload = msg.payload.pm;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2280,
+        "y": 2020,
+        "wires": [
+            [
+                "6bba1a97988f44d4",
+                "7b7a838ec73fca77"
+            ]
+        ]
+    },
+    {
+        "id": "4770b25493756aee",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract CO2 (Park)",
+        "func": "let chartMsg = { payload: msg.payload.co2 };\n\nlet summaryMsg = { payload: msg.payload.co2 };\n\nreturn [chartMsg, summaryMsg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2270,
+        "y": 1940,
+        "wires": [
+            [
+                "c3cf10436dc80199"
+            ],
+            [
+                "68d56b06b15c0af3"
+            ]
+        ]
+    },
+    {
+        "id": "8beb8cad3b3e2ab5",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Scenario Setter",
+        "func": "if (typeof msg.payload === \"string\") {\n    flow.set(\"park_scenario\", msg.payload);\n    node.warn(\"Park scenario changed to: \" + msg.payload);\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 2060,
+        "wires": [
+            [
+                "6692b6a31096490b"
+            ]
+        ]
+    },
+    {
+        "id": "7b7a838ec73fca77",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_dashboard_prk",
+        "mode": "link",
+        "links": [
+            "9db3fbcf834429b9"
+        ],
+        "x": 2445,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "c3cf10436dc80199",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_dashboard_prk",
+        "mode": "link",
+        "links": [
+            "4a45bda38dfa4a1f"
+        ],
+        "x": 2445,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "6bba1a97988f44d4",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "pm25_to_summary_prk",
+        "mode": "link",
+        "links": [
+            "ae7bd9872cba5273"
+        ],
+        "x": 2445,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "68d56b06b15c0af3",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "co2_to_summary_prk",
+        "mode": "link",
+        "links": [
+            "92892b28d598de20"
+        ],
+        "x": 2445,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "0f5aaba91d9cb34e",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "riskengine_to_summary_prk",
+        "mode": "link",
+        "links": [
+            "2315d4d97b33d9f3"
+        ],
+        "x": 2445,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "e0429dea4af5bae9",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Risk (Park)",
+        "func": "msg.payload = msg.payload.risk;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2270,
+        "y": 1880,
+        "wires": [
+            [
+                "0f5aaba91d9cb34e"
+            ]
+        ]
+    },
+    {
+        "id": "62932906b74011e5",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Build Alerts (Park)",
+        "func": "let pm = msg.payload.pm;\nlet co2 = msg.payload.co2;\nlet scenario = msg.payload.scenario;\n\nlet alert = \"No alerts\";\n\nlet pmHigh = 100;\nlet pmVeryHigh = 150;\n\nlet co2High = 800;\nlet co2VeryHigh = 1200;\n\nif (scenario === \"rush_hour\") {\n    alert = \"⚠ Rush Hour: Pollution Increased\";\n}\nif (scenario === \"construction_spike\") {\n    alert = \"🚧 Construction Spike: Very High Pollution\";\n}\nif (scenario === \"windy\") {\n    alert = \"💨 Windy: Pollution Reduced\";\n}\n\nif (pm > pmHigh) {\n    alert = \"⚠ PM2.5 High (\" + pm + \" µg/m³)\";\n}\nif (pm > pmVeryHigh) {\n    alert = \"🚨 PM2.5 DANGEROUS (\" + pm + \" µg/m³)\";\n}\n\nif (co2 > co2High) {\n    alert = \"⚠ CO₂ High (\" + co2 + \" ppm)\";\n}\nif (co2 > co2VeryHigh) {\n    alert = \"🚨 CO₂ CRITICAL (\" + co2 + \" ppm)\";\n}\n\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2270,
+        "y": 2120,
+        "wires": [
+            [
+                "dca2c0432e558008"
+            ]
+        ]
+    },
+    {
+        "id": "dca2c0432e558008",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "alerts_out_prk",
+        "mode": "link",
+        "links": [
+            "236eed2620acf4e0"
+        ],
+        "x": 2445,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "c512086eb91b8bb0",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Format Cloud Status",
+        "func": "let now = new Date().toLocaleTimeString();\n\nif (msg.statusCode === 200) {\n    msg.payload = \"🟢 Cloud OK — \" + now;\n} else {\n    msg.payload = \"🔴 Cloud Error \" + msg.statusCode + \" — \" + now;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3020,
+        "y": 2360,
+        "wires": [
+            [
+                "9f0cfbc747dabea1"
+            ]
+        ]
+    },
+    {
+        "id": "9f0cfbc747dabea1",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "cloudstatus_out_prk",
+        "mode": "link",
+        "links": [
+            "c21251b448aa8224"
+        ],
+        "x": 3185,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "74b628d15ffb44ad",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Spike Predictor",
+        "func": "let data = msg.payload;\n\nlet location = data.location || data.locationId || \"park\";\n\nlet pm = Number(data.pm);\n\nlet history = context.get(location) || [];\n\nhistory.push(pm);\nif (history.length > 3) history.shift();\n\ncontext.set(location, history);\n\nlet spikeWarning = false;\n\nif (history.length === 3) {\n    if (history[0] < history[1] && history[1] < history[2]) {\n        spikeWarning = true;\n    }\n}\n\ndata.history = history;\ndata.spikeWarning = spikeWarning;\n\nlet spikeText = spikeWarning\n    ? \"⚠️ Rising Spike Detected\"\n    : \"✔ Stable\";\n\nlet msg1 = { payload: data };\n\nlet msg2 = { payload: spikeText };\n\nreturn [msg1, msg2];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 2180,
+        "wires": [
+            [
+                "6866a97d6af4f54c"
+            ]
+        ]
+    },
+    {
+        "id": "da38a2797979884a",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "spikepredictor_out_prk",
+        "mode": "link",
+        "links": [
+            "a5a08c815e447806"
+        ],
+        "x": 2445,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "cd3d31a58eafe287",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Extract Spike Text (Park)",
+        "func": "let data = msg.payload;\n\nif (!data) return null;\n\nlet text = data.spikeText || (data.spikeWarning ? \"⚠️ Rising Spike Detected\" : \"✔ Stable\");\n\nmsg.payload = text;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 2280,
+        "wires": [
+            [
+                "da38a2797979884a"
+            ]
+        ]
+    },
+    {
+        "id": "d59ecd6f40c625ef",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park SDI Engine",
+        "func": "let data = msg.payload;\n\nlet pm = Number(data.pm);\nlet co2 = Number(data.co2);\nlet scenario = data.scenario || \"normal\";\nlet spike = data.spikeWarning || false;\n\nlet pmScore = 0;\nif (pm < 15) pmScore = 0;\nelse if (pm < 35) pmScore = 10;\nelse if (pm < 55) pmScore = 20;\nelse if (pm < 100) pmScore = 35;\nelse if (pm < 150) pmScore = 50;\nelse pmScore = 60;\n\nlet co2Score = 0;\nif (co2 < 800) co2Score = 0;\nelse if (co2 < 1000) co2Score = 5;\nelse if (co2 < 1500) co2Score = 10;\nelse if (co2 < 2000) co2Score = 15;\nelse co2Score = 20;\n\nlet spikePenalty = spike ? 10 : 0;\n\nlet scenPenalty = 0;\nif (scenario === \"windy\") scenPenalty = -5;\nif (scenario === \"rush_hour\") scenPenalty = 5;\nif (scenario === \"construction_spike\") scenPenalty = 10;\n\nlet SDI = pmScore + co2Score + spikePenalty + scenPenalty;\nSDI = Math.max(0, Math.min(100, SDI)); // 0–100 clamp\n\nlet category = \"\";\nif (SDI < 20) category = \"🌤 Good — Safe for everyone\";\nelse if (SDI < 40) category = \"🙂 Mild — Sensitive groups should monitor symptoms\";\nelse if (SDI < 60) category = \"😷 Caution — Avoid long outdoor exposure\";\nelse if (SDI < 80) category = \"🤒 Unhealthy — People with asthma should stay indoors\";\nelse category = \"🚫 Sick-Day Risk — High danger for respiratory conditions\";\n\ndata.sdiScore = SDI;\ndata.sdiCategory = category;\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2260,
+        "y": 2200,
+        "wires": [
+            [
+                "1004202b42a4a859"
+            ]
+        ]
+    },
+    {
+        "id": "1004202b42a4a859",
+        "type": "link out",
+        "z": "61b73b37b3a11760",
+        "name": "sickday_out_prk",
+        "mode": "link",
+        "links": [
+            "ca873c5bd39774a4",
+            "e4fa64b0cf5429b8"
+        ],
+        "x": 2445,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "5469f1ab762c5137",
+        "type": "mqtt in",
+        "z": "61b73b37b3a11760",
+        "name": "",
+        "topic": "airsafe/park",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0176bc958a1fa1f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1870,
+        "y": 2100,
+        "wires": [
+            [
+                "4770b25493756aee",
+                "22a695535048c80b",
+                "62932906b74011e5",
+                "cd3d31a58eafe287",
+                "d59ecd6f40c625ef",
+                "5fc867dd484a4895",
+                "e0429dea4af5bae9"
+            ]
+        ]
+    },
+    {
+        "id": "6866a97d6af4f54c",
+        "type": "function",
+        "z": "61b73b37b3a11760",
+        "name": "Park Clone for MQTT",
+        "func": "let msg1 = { payload: msg.payload };  \nlet msg2 = { payload: msg.payload }; \nreturn [msg1, msg2];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 2180,
+        "wires": [
+            [
+                "dff889a445f1be93"
+            ],
+            [
+                "5fc867dd484a4895"
+            ]
+        ]
+    },
+    {
+        "id": "ad5fa4529b6a6193",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Normal Button",
+        "group": "7389853dd5bfddda",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Normal",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "normal",
+        "payloadType": "str",
+        "topic": "airsafe/traffic/scenario",
+        "topicType": "msg",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "8ab49d3efeee3a0e"
+            ]
+        ]
+    },
+    {
+        "id": "8ab49d3efeee3a0e",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Scenario OUT_trf",
+        "mode": "link",
+        "links": [
+            "e16259043793b3b6"
+        ],
+        "x": 985,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "52df1d0bdd5b85f8",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Rush Hour Button",
+        "group": "7389853dd5bfddda",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Rush Hour",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "rush_hour",
+        "payloadType": "str",
+        "topic": "airsafe/traffic/scenario",
+        "topicType": "msg",
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "23d108bdcd909352"
+            ]
+        ]
+    },
+    {
+        "id": "23d108bdcd909352",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Scenario OUT_trf",
+        "mode": "link",
+        "links": [
+            "e16259043793b3b6"
+        ],
+        "x": 985,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "12c6779727f71df3",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Windy Button",
+        "group": "7389853dd5bfddda",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Windy",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "windy",
+        "payloadType": "str",
+        "topic": "airsafe/traffic/scenario",
+        "topicType": "msg",
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "b10198301b5948f2"
+            ]
+        ]
+    },
+    {
+        "id": "b10198301b5948f2",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Scenario OUT_trf",
+        "mode": "link",
+        "links": [
+            "e16259043793b3b6"
+        ],
+        "x": 985,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "06dbde10793fee2d",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Construction Spike Button",
+        "group": "7389853dd5bfddda",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Construction Spike",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "construction_spike",
+        "payloadType": "str",
+        "topic": "airsafe/traffic/scenario",
+        "topicType": "msg",
+        "x": 760,
+        "y": 580,
+        "wires": [
+            [
+                "3bb4fea0f38a5b08"
+            ]
+        ]
+    },
+    {
+        "id": "3bb4fea0f38a5b08",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Scenario OUT_trf",
+        "mode": "link",
+        "links": [
+            "e16259043793b3b6"
+        ],
+        "x": 985,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "98a74d6476812120",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic CO2 Chart",
+        "group": "de6ed19636e84d04",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "CO2 (Traffic Junction)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 710,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efc1ada6ee17d827",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic PM2.5 Chart",
+        "group": "de6ed19636e84d04",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "PM2.5 (Traffic Junction)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 710,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7764a563def2149f",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_dashboard_trf",
+        "links": [
+            "d9f5d3f777449d9f"
+        ],
+        "x": 545,
+        "y": 780,
+        "wires": [
+            [
+                "efc1ada6ee17d827"
+            ]
+        ]
+    },
+    {
+        "id": "53f27359524165b9",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_dashboard_trf",
+        "links": [
+            "e584d44fa05127d4"
+        ],
+        "x": 545,
+        "y": 700,
+        "wires": [
+            [
+                "98a74d6476812120"
+            ]
+        ]
+    },
+    {
+        "id": "7faf8fd79679d7c1",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "1cb611b36967e4b3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "CO2 Summary",
+        "label": "CO2",
+        "format": "{{msg.payload}} ppm",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 700,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "996fdd0f6d42cf77",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "1cb611b36967e4b3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "PM2.5 Summary",
+        "label": "PM2.5",
+        "format": "{{msg.payload}} µg/m³",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 710,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "ddd7aa8aa71d43ec",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "1cb611b36967e4b3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Risk Summary",
+        "label": "Risk Level",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 700,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "2e816ad3d772912a",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_summary_trf",
+        "links": [
+            "fa0882bb55bd3695"
+        ],
+        "x": 545,
+        "y": 900,
+        "wires": [
+            [
+                "7faf8fd79679d7c1"
+            ]
+        ]
+    },
+    {
+        "id": "6c2efca2e9345cd7",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_summary_trf",
+        "links": [
+            "67663edae3ad02b7"
+        ],
+        "x": 545,
+        "y": 980,
+        "wires": [
+            [
+                "996fdd0f6d42cf77"
+            ]
+        ]
+    },
+    {
+        "id": "5105d7f6ec6b53cf",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "riskengine_to_summary_trf",
+        "links": [
+            "53361f14783d066e"
+        ],
+        "x": 545,
+        "y": 1060,
+        "wires": [
+            [
+                "ddd7aa8aa71d43ec"
+            ]
+        ]
+    },
+    {
+        "id": "02d9121b6165cc39",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "2e560682427d8016",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alerts",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 670,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "07d78189661accb7",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "alerts_in_trf",
+        "links": [
+            "64b465095b1129d2"
+        ],
+        "x": 545,
+        "y": 1180,
+        "wires": [
+            [
+                "02d9121b6165cc39"
+            ]
+        ]
+    },
+    {
+        "id": "c1b41928cf0edde2",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "0b1a7ec427527cb5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Cloud Status",
+        "label": "Cloud",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 690,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "3cc7ba181c04d491",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "cloudstatus_in_trf",
+        "links": [
+            "d3dcf36706d0ca36"
+        ],
+        "x": 545,
+        "y": 1300,
+        "wires": [
+            [
+                "c1b41928cf0edde2"
+            ]
+        ]
+    },
+    {
+        "id": "ed0cbb92315f9b49",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "24fc7db1d41b03fe",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Spike Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 700,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "5c71b0eaae0d5cad",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "spikepredictor_in_trf",
+        "links": [
+            "fecb3a2087f1bf47"
+        ],
+        "x": 545,
+        "y": 1420,
+        "wires": [
+            [
+                "ed0cbb92315f9b49"
+            ]
+        ]
+    },
+    {
+        "id": "58ba873126e68fbe",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "6c71119ea69e053e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sick-Day Index",
+        "format": "{{msg.payload.sdiCategory}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 700,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "a7caecb7f7549f16",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "6c71119ea69e053e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SDI Score",
+        "format": "{{msg.payload.sdiScore}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 680,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "a9364b3e66cb0921",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickdayin_text_trf",
+        "links": [
+            "b1c9eb3ab7f72d07"
+        ],
+        "x": 545,
+        "y": 1540,
+        "wires": [
+            [
+                "58ba873126e68fbe"
+            ]
+        ]
+    },
+    {
+        "id": "88335236c88245cb",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickday_in_numeric_trf",
+        "links": [],
+        "x": 545,
+        "y": 1620,
+        "wires": [
+            [
+                "a7caecb7f7549f16"
+            ]
+        ]
+    },
+    {
+        "id": "8b719bba8a8e02d6",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_con",
+        "mode": "link",
+        "links": [
+            "57d001b0e20bc0b0"
+        ],
+        "x": 1745,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "400257b77edf94fe",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_con",
+        "mode": "link",
+        "links": [
+            "57d001b0e20bc0b0"
+        ],
+        "x": 1745,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5d8983ff553d52a6",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_con",
+        "mode": "link",
+        "links": [
+            "57d001b0e20bc0b0"
+        ],
+        "x": 1745,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4b997bc77c0f7443",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction Spike Button",
+        "group": "d4170ab9840a8d24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Construction Spike",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "construction_spike",
+        "payloadType": "str",
+        "topic": "airsafe/construction/scenario",
+        "topicType": "msg",
+        "x": 1500,
+        "y": 580,
+        "wires": [
+            [
+                "ad106e700e9654a0"
+            ]
+        ]
+    },
+    {
+        "id": "ad106e700e9654a0",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_con",
+        "mode": "link",
+        "links": [
+            "57d001b0e20bc0b0"
+        ],
+        "x": 1745,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7a5e4ffde58cd51e",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction CO2 Chart",
+        "group": "76e694235c6be27e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "CO2 (Construction Zone)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1490,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91f36e9629454d7b",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction PM2.5 Chart",
+        "group": "76e694235c6be27e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "PM2.5 (Construction Zone)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1500,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a0be3958d8a5685",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_dashboard_con",
+        "links": [
+            "a782d17e83be1139"
+        ],
+        "x": 1305,
+        "y": 780,
+        "wires": [
+            [
+                "91f36e9629454d7b"
+            ]
+        ]
+    },
+    {
+        "id": "8477c056d7e455e2",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_dashboard_con",
+        "links": [
+            "8c1b07fd08a7cae4"
+        ],
+        "x": 1305,
+        "y": 700,
+        "wires": [
+            [
+                "7a5e4ffde58cd51e"
+            ]
+        ]
+    },
+    {
+        "id": "b5f345242fe6f09f",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "dece88c70a9ef56b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "CO2 Summary",
+        "label": "CO2",
+        "format": "{{msg.payload}} ppm",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1460,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "86c8def44134d253",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "dece88c70a9ef56b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "PM2.5 Summary",
+        "label": "PM2.5",
+        "format": "{{msg.payload}} µg/m³",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1470,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "300429f2debef325",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "dece88c70a9ef56b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Risk Summary",
+        "label": "Risk Level",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1460,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "c702e85a382773c4",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_summary_con",
+        "links": [
+            "ae2c3bbb7ff85fb8"
+        ],
+        "x": 1305,
+        "y": 900,
+        "wires": [
+            [
+                "b5f345242fe6f09f"
+            ]
+        ]
+    },
+    {
+        "id": "1561c1353f436ab3",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_summary_con",
+        "links": [
+            "9c2880c640e0c4ee"
+        ],
+        "x": 1305,
+        "y": 980,
+        "wires": [
+            [
+                "86c8def44134d253"
+            ]
+        ]
+    },
+    {
+        "id": "1e318199cfcd2fcb",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "riskengine_to_summary_con",
+        "links": [
+            "4ffb1fe1facba79e"
+        ],
+        "x": 1305,
+        "y": 1060,
+        "wires": [
+            [
+                "300429f2debef325"
+            ]
+        ]
+    },
+    {
+        "id": "3bc4400c0dd89c75",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "beee854713f5d6ad",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alerts",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1430,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "4ffb6c8e427f7b4a",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "alerts_in_con",
+        "links": [
+            "258fd29680cf98aa"
+        ],
+        "x": 1305,
+        "y": 1180,
+        "wires": [
+            [
+                "3bc4400c0dd89c75"
+            ]
+        ]
+    },
+    {
+        "id": "16ac58f796196f81",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "dd86562d8b7908fa",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Cloud Status",
+        "label": "Cloud",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1450,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "b64afbe8f119826b",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "cloudstatus_in_con",
+        "links": [
+            "104249c71bdefac8"
+        ],
+        "x": 1305,
+        "y": 1300,
+        "wires": [
+            [
+                "16ac58f796196f81"
+            ]
+        ]
+    },
+    {
+        "id": "d4b83e8aab60d766",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "33d783847867c10f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Spike Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1460,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "1f709f77a3750890",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "spikepredictor_in_con",
+        "links": [
+            "11af937b50c6b19b"
+        ],
+        "x": 1305,
+        "y": 1420,
+        "wires": [
+            [
+                "d4b83e8aab60d766"
+            ]
+        ]
+    },
+    {
+        "id": "39ef3728ba9c7a6b",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "84de306013ad21f4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sick-Day Index",
+        "format": "{{msg.payload.sdiCategory}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1460,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "5a2ca8b2d45c41c9",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "84de306013ad21f4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SDI Score",
+        "format": "{{msg.payload.sdiScore}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1440,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "e332637430646894",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickdayin_text_con",
+        "links": [
+            "0c572beca7e94d1f"
+        ],
+        "x": 1305,
+        "y": 1540,
+        "wires": [
+            [
+                "39ef3728ba9c7a6b"
+            ]
+        ]
+    },
+    {
+        "id": "7771504577eb6b66",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickday_in_numeric_con",
+        "links": [
+            "0c572beca7e94d1f"
+        ],
+        "x": 1305,
+        "y": 1620,
+        "wires": [
+            [
+                "5a2ca8b2d45c41c9"
+            ]
+        ]
+    },
+    {
+        "id": "da42cff6896b026c",
+        "type": "ui_template",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "4bf11351ab4fb8f7",
+        "name": "Construction Zone Sensor Title + Devider",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center; margin:10px 0; color:#555;\">\n    Construction Zone Sensor\n</h3>\n<hr style=\"border:0; border-top:1px solid #ccc; margin-top:-10px;\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1540,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f74d18eeba624cad",
+        "type": "ui_template",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "c0c91c0cad6a40f0",
+        "name": "Traffic Junction Sendor Title",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center; margin:10px 0; color:#555;\">\n    Traffic Junction Sensor\n</h3>\n<hr style=\"border:0; border-top:1px solid #ccc; margin-top:-10px;\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9055a01ee9fef106",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction Windy Button",
+        "group": "d4170ab9840a8d24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Windy",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "windy",
+        "payloadType": "str",
+        "topic": "airsafe/construction/scenario",
+        "topicType": "msg",
+        "x": 1500,
+        "y": 500,
+        "wires": [
+            [
+                "5d8983ff553d52a6"
+            ]
+        ]
+    },
+    {
+        "id": "c3708b9edcf76fb5",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction Rush Hour Button",
+        "group": "d4170ab9840a8d24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Rush Hour",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "rush_hour",
+        "payloadType": "str",
+        "topic": "airsafe/construction/scenario",
+        "topicType": "msg",
+        "x": 1510,
+        "y": 420,
+        "wires": [
+            [
+                "400257b77edf94fe"
+            ]
+        ]
+    },
+    {
+        "id": "48d774428ff7f7be",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Construction Normal Button",
+        "group": "d4170ab9840a8d24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Normal",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "normal",
+        "payloadType": "str",
+        "topic": "airsafe/construction/scenario",
+        "topicType": "msg",
+        "x": 1500,
+        "y": 340,
+        "wires": [
+            [
+                "8b719bba8a8e02d6"
+            ]
+        ]
+    },
+    {
+        "id": "3dccec8c99cc100c",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_prk",
+        "mode": "link",
+        "links": [
+            "136f9a29220dbca6"
+        ],
+        "x": 2575,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c241c8f06a7a505f",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_prk",
+        "mode": "link",
+        "links": [
+            "136f9a29220dbca6"
+        ],
+        "x": 2575,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "497937fe6eafb7c4",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_prk",
+        "mode": "link",
+        "links": [
+            "136f9a29220dbca6"
+        ],
+        "x": 2575,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b096fc30e9028515",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park Spike Button",
+        "group": "cd0245f72a315e24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Construction Spike",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "construction_spike",
+        "payloadType": "str",
+        "topic": "airsafe/prak/scenario",
+        "topicType": "msg",
+        "x": 2300,
+        "y": 580,
+        "wires": [
+            [
+                "79ebb1486843af66"
+            ]
+        ]
+    },
+    {
+        "id": "79ebb1486843af66",
+        "type": "link out",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Traffic Scenario OUT_prk",
+        "mode": "link",
+        "links": [
+            "136f9a29220dbca6"
+        ],
+        "x": 2575,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0a2ba8cbc39cda68",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park CO2 Chart",
+        "group": "28fd8b4da67291c1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "CO2 (Park)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2290,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c78a5a8d42fb1f4",
+        "type": "ui_chart",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park PM2.5 Chart",
+        "group": "28fd8b4da67291c1",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "PM2.5 (Park)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2300,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9db3fbcf834429b9",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_dashboard_prk",
+        "links": [
+            "7b7a838ec73fca77"
+        ],
+        "x": 2135,
+        "y": 780,
+        "wires": [
+            [
+                "9c78a5a8d42fb1f4"
+            ]
+        ]
+    },
+    {
+        "id": "4a45bda38dfa4a1f",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_dashboard_prk",
+        "links": [
+            "c3cf10436dc80199"
+        ],
+        "x": 2135,
+        "y": 700,
+        "wires": [
+            [
+                "0a2ba8cbc39cda68"
+            ]
+        ]
+    },
+    {
+        "id": "9be43993ad54965d",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "6e9b8472def91673",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "CO2 Summary",
+        "label": "CO2",
+        "format": "{{msg.payload}} ppm",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2290,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "25fc41bcb91dbc53",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "6e9b8472def91673",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "PM2.5 Summary",
+        "label": "PM2.5",
+        "format": "{{msg.payload}} µg/m³",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2300,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f8189ce0c0f94ca2",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "6e9b8472def91673",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Risk Summary",
+        "label": "Risk Level",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2290,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "92892b28d598de20",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "co2_to_summary_prk",
+        "links": [
+            "68d56b06b15c0af3"
+        ],
+        "x": 2135,
+        "y": 900,
+        "wires": [
+            [
+                "9be43993ad54965d"
+            ]
+        ]
+    },
+    {
+        "id": "ae7bd9872cba5273",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "pm25_to_summary_prk",
+        "links": [
+            "6bba1a97988f44d4"
+        ],
+        "x": 2135,
+        "y": 980,
+        "wires": [
+            [
+                "25fc41bcb91dbc53"
+            ]
+        ]
+    },
+    {
+        "id": "2315d4d97b33d9f3",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "riskengine_to_summary_prk",
+        "links": [
+            "0f5aaba91d9cb34e"
+        ],
+        "x": 2135,
+        "y": 1060,
+        "wires": [
+            [
+                "f8189ce0c0f94ca2"
+            ]
+        ]
+    },
+    {
+        "id": "732ee5c981e4ce89",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "9778df195c1b6ef7",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alerts",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2260,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "236eed2620acf4e0",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "alerts_in_prk",
+        "links": [
+            "dca2c0432e558008"
+        ],
+        "x": 2135,
+        "y": 1180,
+        "wires": [
+            [
+                "732ee5c981e4ce89"
+            ]
+        ]
+    },
+    {
+        "id": "84df942ae13f3a08",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "c87fbcece7a2d5da",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Cloud Status",
+        "label": "Cloud",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2280,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "c21251b448aa8224",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "cloudstatus_in_prk",
+        "links": [
+            "9f0cfbc747dabea1"
+        ],
+        "x": 2135,
+        "y": 1300,
+        "wires": [
+            [
+                "84df942ae13f3a08"
+            ]
+        ]
+    },
+    {
+        "id": "5fedbd644ab2355b",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "146d1ddaad9d72a4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Spike Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2290,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "a5a08c815e447806",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "spikepredictor_in_prk",
+        "links": [
+            "da38a2797979884a"
+        ],
+        "x": 2135,
+        "y": 1420,
+        "wires": [
+            [
+                "5fedbd644ab2355b"
+            ]
+        ]
+    },
+    {
+        "id": "5aa8370005d8ab4a",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "0fa9e18d0235e834",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sick-Day Index",
+        "format": "{{msg.payload.sdiCategory}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2290,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "73151be5d10db309",
+        "type": "ui_text",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "0fa9e18d0235e834",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SDI Score",
+        "format": "{{msg.payload.sdiScore}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2270,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "ca873c5bd39774a4",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickdayin_text_prk",
+        "links": [
+            "1004202b42a4a859"
+        ],
+        "x": 2135,
+        "y": 1540,
+        "wires": [
+            [
+                "5aa8370005d8ab4a"
+            ]
+        ]
+    },
+    {
+        "id": "e4fa64b0cf5429b8",
+        "type": "link in",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "sickday_in_numeric_prk",
+        "links": [
+            "1004202b42a4a859"
+        ],
+        "x": 2135,
+        "y": 1620,
+        "wires": [
+            [
+                "73151be5d10db309"
+            ]
+        ]
+    },
+    {
+        "id": "7099df0f29d5c65c",
+        "type": "ui_template",
+        "z": "b7fc6a3d6832b1ea",
+        "group": "a311cdd019932dba",
+        "name": "Park Sensor Title + Devider",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<h3 style=\"text-align:center; margin:10px 0; color:#555;\">\n    Park Sensor\n</h3>\n<hr style=\"border:0; border-top:1px solid #ccc; margin-top:-10px;\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2330,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "203156b58f3e98f4",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park Windy Button",
+        "group": "cd0245f72a315e24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Windy",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "windy",
+        "payloadType": "str",
+        "topic": "airsafe/park/scenario",
+        "topicType": "msg",
+        "x": 2300,
+        "y": 500,
+        "wires": [
+            [
+                "497937fe6eafb7c4"
+            ]
+        ]
+    },
+    {
+        "id": "72e033528e4ae838",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park Rush Hour Button",
+        "group": "cd0245f72a315e24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Rush Hour",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "rush_hour",
+        "payloadType": "str",
+        "topic": "airsafe/park/scenario",
+        "topicType": "msg",
+        "x": 2320,
+        "y": 420,
+        "wires": [
+            [
+                "c241c8f06a7a505f"
+            ]
+        ]
+    },
+    {
+        "id": "529302d74ef0b23a",
+        "type": "ui_button",
+        "z": "b7fc6a3d6832b1ea",
+        "name": "Park Normal Button",
+        "group": "cd0245f72a315e24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Normal",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#337ab7",
+        "className": "",
+        "icon": "",
+        "payload": "normal",
+        "payloadType": "str",
+        "topic": "airsafe/park/scenario",
+        "topicType": "msg",
+        "x": 2310,
+        "y": 340,
+        "wires": [
+            [
+                "3dccec8c99cc100c"
+            ]
+        ]
+    },
+    {
+        "id": "1c6839ef83ee8b2c",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
