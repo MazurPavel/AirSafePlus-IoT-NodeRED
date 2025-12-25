@@ -112,6 +112,20 @@ Detailed view of:
 ---
 
 ## ▶️ How to Run (Node-RED)
+## 🧾 Node-RED Flow Export
+
+The full Node-RED flow used in this project is included in the repository.
+
+- **Flow file:** [`flows/AirSafe+-Final-Flow.json`](flows/AirSafe+-Final-Flow.json)
+
+⬇️ **Direct download:**  
+[Download AirSafe+ Node-RED Flow (JSON)](flows/AirSafe+-Final-Flow.json?raw=1)
+
+### How to import the flow
+1. Open **Node-RED**
+2. Menu → **Import**
+3. Upload the downloaded JSON file
+4. Click **Deploy**
 
 1. Start Node-RED:
 ```bash
