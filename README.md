@@ -111,6 +111,53 @@ Detailed view of:
 
 ---
 
+## ☁️ Cloud & Messaging Integrations
+
+### MQTT (HiveMQ)
+
+Sensor data is published to structured MQTT topics per location:
+- `airsafe/traffic`
+- `airsafe/construction`
+- `airsafe/park`
+
+HiveMQ Cloud is used to validate real-time message flow and topic-based separation.
+
+![HiveMQ Web Client](assets/hivemq_web_client.png)
+
+---
+
+### ThingSpeak — Traffic Junction Channel
+
+Traffic-area air quality data streamed to ThingSpeak for cloud-based time-series visualization.
+
+![ThingSpeak Traffic Junction](assets/thingspeak_traffic_junction.png)
+
+---
+
+### ThingSpeak — Construction Zone Channel
+
+Construction-area pollution monitoring with higher PM2.5 and CO₂ variability.
+
+![ThingSpeak Construction Zone](assets/thingspeak_construction.png)
+
+---
+
+### ThingSpeak — Park Channel
+
+Park location used as a low-risk reference environment.
+
+![ThingSpeak Park](assets/thingspeak_park.png)
+
+---
+
+### ThingSpeak — Channels Overview
+
+Overview of all AirSafe+ cloud channels used in the project.
+
+![ThingSpeak Channels](assets/thingspeak_channels.png)
+
+---
+
 ## ▶️ How to Run (Node-RED)
 ## 🧾 Node-RED Flow Export
 
