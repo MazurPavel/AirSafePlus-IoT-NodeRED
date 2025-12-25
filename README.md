@@ -1,96 +1,123 @@
-# AirSafePlus — Multi-Location IoT Air Quality Monitoring (Node-RED)
+AirSafePlus — Multi-Location IoT Air Quality Monitoring (Node-RED)
 
-**AirSafePlus** is a production-style IoT monitoring system that simulates and visualizes air quality across multiple urban locations (e.g., park, construction area, residential zone).
+AirSafePlus is a production-style IoT monitoring system designed to simulate, analyze, and visualize air quality across multiple urban locations such as parks, construction zones, and traffic areas.
 
-The system is built using **Node-RED** and follows a realistic IoT pipeline:
-**sensors → MQTT messaging → analytics → dashboard → alerts & recommendations**.
+The system is built using Node-RED and follows a realistic end-to-end IoT pipeline:
 
----
+Sensors → MQTT → Analytics → Dashboard → Alerts & Recommendations
 
-## 🎯 Project Motivation
-
-Air quality is a critical smart-city challenge:
-- citizens need **simple and actionable insights**, not raw sensor values
-- operators need **real-time monitoring and early warnings**
-- systems must be **explainable and easy to extend**
-
-This project demonstrates how to design an **end-to-end IoT analytics solution** that can later be connected to real sensors and cloud services.
+This project demonstrates how smart-city air quality systems can deliver actionable insights instead of raw sensor data.
 
 ---
 
-## 🚀 Key Features
+🎯 Project Motivation
 
-- Multi-location air quality monitoring
-- Scenario-based sensor simulation (normal, dusty wind, gathering, construction)
-- Risk-level calculation and health-oriented index
-- Real-time dashboard (charts, gauges, indicators)
-- Alert logic and user recommendations
-- MQTT-based architecture ready for cloud integration
+Air quality monitoring is a critical smart-city challenge:
+	•	Citizens need clear health-oriented insights, not just PM or CO₂ numbers
+	•	City operators require real-time visibility and early warnings
+	•	IoT systems must be transparent, explainable, and extensible
 
----
-
-## 🧠 System Architecture (High-Level)
-
-**Data Flow**
-1. Location & scenario selection
-2. Sensor data generation (PM2.5, CO₂, temperature, etc.)
-3. MQTT message publishing
-4. Analytics & risk calculation layer
-5. Live dashboard visualization
-6. Alerts and recommendations
-
-**Designed to be easily extended with real IoT devices**
+This project shows how to design an end-to-end IoT analytics solution that can later be connected to real sensors and cloud platforms.
 
 ---
 
-## 🛠 Tech Stack & Integrations
-
-- **Node-RED** — orchestration and business logic
-- **MQTT / HiveMQ** — message broker for sensor data
-- **Node-RED Dashboard** — real-time visualization
-- **JavaScript functions** — analytics & risk scoring
-- **ThingSpeak-ready architecture** — optional cloud analytics integration
-
----
-
-## 🖥️ Dashboard Demo
-
-The dashboard visualizes:
-- current air quality indicators
-- risk level per location
-- historical trends
-- health recommendations for users
-
-Screenshots are available below.
+🚀 Key Features
+	•	Multi-location air quality monitoring
+	•	Scenario-based sensor simulation:
+	•	Normal
+	•	Dusty / windy conditions
+	•	Gatherings
+	•	Construction spikes
+	•	Risk level calculation and health-oriented indices
+	•	Real-time interactive dashboard (charts, gauges, indicators)
+	•	Alert logic and user-friendly recommendations
+	•	MQTT-based architecture ready for cloud integration
 
 ---
 
-## 📂 Repository Structure
+🧠 System Architecture (High-Level)
 
-```text
-AirSafePlus-IoT-NodeRED/
+Data Flow
+	1.	Location & scenario selection
+	2.	Sensor data generation (PM2.5, CO₂, etc.)
+	3.	MQTT message publishing
+	4.	Analytics & risk calculation layer
+	5.	Live dashboard visualization
+	6.	Alerts and health recommendations
+
+The system is designed to be easily extended with real IoT devices.
+
+---
+
+🛠 Tech Stack & Integrations
+	•	Node-RED — orchestration and business logic
+	•	MQTT / HiveMQ — message broker for sensor data
+	•	Node-RED Dashboard — real-time visualization
+	•	JavaScript Function nodes — analytics, risk scoring, predictions
+	•	ThingSpeak-ready architecture — optional cloud analytics integration
+
+---
+
+🖥️ Node-RED Flows & Dashboard
+
+Below are selected screenshots illustrating the Node-RED architecture and the interactive dashboard used for real-time air quality analysis.
+
+---
+
+🔧 Node-RED Flow Architecture
+
+This overview shows the complete multi-location processing pipeline, including:
+	•	Scenario generators
+	•	Sensor simulation
+	•	Spike prediction
+	•	Risk engines
+	•	MQTT publishing
+	•	Dashboard outputs
+
+	✅ Dashboard — Normal Environmental Conditions
+
+Example of a low-risk scenario with stable PM2.5 and CO₂ levels.
+The system reports normal exposure risk and recommends outdoor activities.
+
+⚠️ Dashboard — High Risk & Alerts
+
+Example of a high-risk situation caused by pollution spikes.
+The system detects increased exposure risk, updates health indices, and generates actionable alerts.
+
+📊 Dashboard — Metrics, Indices & Predictions
+
+Detailed view of:
+	•	PM2.5 & CO₂ time series
+	•	Exposure risk level
+	•	Sick-Day Index
+	•	Air Safety Index
+	•	Spike prediction indicators
+
+	▶️ How to Run (Node-RED)
+	1.	Start Node-RED:
+	node-red
+
+		2.	Open the editor:
+		http://localhost:1880
+
+			3.	Import the flow:
+	•	Menu → Import
+	•	Upload:
+	flows/AirSafe+-Final-Flow.json
+
+		4.	Deploy the flow
+	5.	Open the dashboard:
+	http://localhost:1880/ui
+
+	📂 Repository Structure
+	AirSafePlus-IoT-NodeRED/
 ├── flows/        # Exported Node-RED flows (.json)
 ├── assets/       # Dashboard & flow screenshots
 ├── docs/         # Project documentation / report
 ├── README.md
-└── LICENSE
+├── LICENSE
+└── .gitignore
 
-▶️ How to Run (Node-RED)
-
-Import the flow
-	1.	Open Node-RED
-	2.	Menu → Import
-	3.	Upload flow from:
-
-  flows/AirSafe+-Final-Flow.json
-
-  	4.	Deploy the flow
-	5.	Open the dashboard:
-  http://localhost:1880/ui
-
-  📸 Example Screenshots
-  Normal air quality scenario
-  High-risk air quality scenario
 📈 Practical Value
 	•	Demonstrates a realistic smart-city IoT use case
 	•	Shows how to structure IoT analytics pipelines
@@ -100,8 +127,8 @@ Import the flow
 ⸻
 
 🔮 Future Improvements
-	•	Connection to physical sensors (ESP32, Arduino, Raspberry Pi)
-	•	Cloud deployment (AWS IoT / Azure IoT Hub)
+	•	Integration with physical sensors (ESP32, Arduino, Raspberry Pi)
+	•	Cloud deployment (AWS IoT, Azure IoT Hub)
 	•	Advanced anomaly detection
 	•	Mobile-friendly dashboards
 	•	Integration with public health systems
@@ -110,6 +137,5 @@ Import the flow
 
 ⚖️ License
 
-MIT
-
+This project is released under the MIT License.
   
